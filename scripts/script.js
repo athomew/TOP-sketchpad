@@ -1,5 +1,8 @@
 $(document).ready(function(){
     makeGrid(16);
+    $(document).on('mouseenter','.tile', function(){
+        $(this).addClass('filled');
+    })
 });
 
 function makeGrid(size){
